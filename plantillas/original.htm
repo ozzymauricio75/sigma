@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+  <head>
+    <title>{%titulo}</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset={%codificacion}" />
+    <meta name="author" content="{%autor}" />
+    <meta name="generator" content="{%generador}" />
+    <meta name="description" content="{%descripcion}" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="{%cssGeneral}" media="screen, tv, projection" title="Global" />
+    {%javascript}
+    <script type="text/javascript">
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
+  </head>
+  <body>
+    <div id="cabecera">
+      <div id="barraMenu">{%menu}</div>
+      <div id="cuadroEspera"></div>
+    </div>
+    <div id="contenido">
+      <div id="bloqueIzquierdo">
+        <div id="centroBloqueDerecho">
+          <div id="componente">
+            <div id="buscador">{%buscador}</div>
+            <div id="tituloComponente">{%componente}</div>
+          </div>
+          <div id="botonera">
+            <div id="paginador">{%paginador}</div>
+            <div id="botones">{%botones}</div>
+          </div>
+          <div id="barraEstado">
+            <div id="registros">{%nombre_usuario_ingreso} {%registros}</div>
+            <div id="mensajeBarraEstado"></div>
+          </div>
+          <div id="contenidoPrincipal">
+            {%bloqueIzquierdo}
+          </div>
+          <div id="bloqueDerecho">
+          </div>
+          <div id="pie">{%pie}</div>
+          <div id="logoAplicacion">{%logoAplicacion}</div>
+          <div id="cuadroDialogo"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

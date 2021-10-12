@@ -1,0 +1,2 @@
+criterio_subnivel_articulos|01|01|13|TOP Y HORMADORES
+conceptos_criterio_subnivel_articulos|01|01|32|04|TALLA: 24
